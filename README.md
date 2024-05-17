@@ -4,7 +4,7 @@
 ## Descripción 📄 
 Este proyecto destaca las principales características de mi desarrollo en programación web, abarcando varios aspectos esenciales. Incluye el uso de tecnologías como HTML, CSS y JavaScript, entre otras. El objetivo principal de esta práctica es demostrar mis habilidades de desarrollo web y proporcionar un panorama general de mis capacidades.
 
-⚙️ # Instalación
+## Instalación ⚙️
 Sigue estos pasos para instalar el proyecto:
 
 ## Clona el repositorio:
