@@ -6,6 +6,7 @@
     --primario: #ffc107;
     --secundario: #0097a7; 
     --gris: #757575; 
+    --grisClaro: #DFE9F3;
 }
 
 /*Las líneas de código del html y body 
@@ -22,7 +23,8 @@ html{
 }
 body{
     font-size:16px;/* 1rem = 10px*/  
-    font-family: "Krub", sans-serif;  
+    font-family: "Krub", sans-serif;
+    background-image:linear-gradient(to top, #DFE9F3 0%, #fff 100%);
 }
 .contenedor{
     max-width: 120rem;
@@ -43,11 +45,24 @@ body{
     border-radius: .5rem;
     width: 90%;
     text-align: center;
+    border:none;
 }
 @media (min-width: 768px) {
     .boton{
         width: auto;
     }
+}
+.boton:hover{
+    cursor: pointer;
+}
+
+.sombra{
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.54);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.54);
+    box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.54);
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 1rem;
 }
 
 /*Tipografía*/
@@ -107,6 +122,7 @@ padding: 1rem ;
     background-size: cover;
     height: 450px;
     position:relative;
+    margin-bottom: 2rem;
     
 }
 .contenido-hero{
@@ -124,4 +140,77 @@ padding: 1rem ;
 .contenido-hero h2,
 .contenido-hero p{
     color:#ffffff
+}
+
+/* Servicios */
+@media (min-width: 768px) {
+    .servicios{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1rem;
+    }
+}
+.servicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.servicio h3{
+    color:#0097a7;
+    font-weight: normal;
+}
+.servicio p{
+    line-height: 2;
+    text-align: center;
+}
+.servicio .iconos{
+    height: 15rem;
+    width: 15rem;
+    background-color: #ffc107;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* contacto */
+.formulario{
+    background-color: #757575;
+    width: min(60rem, 100%); /*Utiliza el valor más pequeño*/
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.formulario fieldset{
+    border: none;
+}
+
+.formulario legend{
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color:#ffc107;
+}
+
+.contenedor-campos{
+
+}
+.campo{
+    margin-bottom: 1rem;
+}
+.campo label{
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+}
+.campo input, .txt {
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+}
+.enviar .boton{
+    width: 100%;
 }
